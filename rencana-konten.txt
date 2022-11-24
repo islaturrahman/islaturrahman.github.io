@@ -1,5 +1,8 @@
 RENCANA KONTENT BLOG
 - High Level Languange
 - Javascript Dasar
+  * Belajar Operator
+  * Membuat Variabel
 - HTML
 - CSS
+  * css inline dan ekternal file
