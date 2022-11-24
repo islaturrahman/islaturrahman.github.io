@@ -1,0 +1,5 @@
+RENCANA KONTENT BLOG
+- High Level Languange
+- Javascript Dasar
+- HTML
+- CSS
