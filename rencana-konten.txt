@@ -1,5 +1,9 @@
 RENCANA KONTENT BLOG
 - High Level Languange
 - Javascript Dasar
+  * condition
+  * Looping
 - HTML
 - CSS
+  * Css layout
+  * id & class property
