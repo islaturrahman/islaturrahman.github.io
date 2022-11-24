@@ -7,3 +7,4 @@ RENCANA KONTENT BLOG
 - CSS
   * Css layout
   * id & class property
+
