@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/css/bootstrap.css" rel="stylesheet">
+    <script src="../angular.min.js"></script>
+    <link rel="stylesheet" href="../style/font.css">
+    <title>Program PKM-K Prodi Informatika Universitas Nasional</title>
+</head>
+
+<body>
+    <div class="header bg-warning">
+        <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/myphotocircle.png" alt="" width="30" height="30">
+                </a> -->
+                <div class="title">
+                    <h4>PKM-K 2022</h4>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-2 blog-content shadow-sm p-lg-3">
+        <h3 class="mt-2">Program PKM-K Prodi Informatika Universitas Nasional</h3>
+        <span><small>author: islaturrahman</small></span>
+        <div class="content mt-3">
+            <a>
+                Hy teman-teman, terimakasih telah mampir ke sini! <br>
+                teman-teman dapat membaca informasi lebih detail terkait program ini
+                <a href="https://simbelmawa.kemdikbud.go.id/portal/wp-content/uploads/2022/03/4.-PKM-K.pdf"
+                    class="btn btn-outline-success ps-3 pe-3" target="_blank">
+                    disini
+                </a>
+                <br><br>
+                setelah teman-teman membaca program diatas, kami mengundang anda untuk mengikuti program ini dengan
+                ide brilian anda yang inovasi dan unik, jika anda memiliki sesuatu ide dan membutuhkan tim untuk
+                berkolabori
+                dalam pencapaian ide tersebut, ini adalah kesempatan anda untuk bergabung dalam tim yang produktif.
+
+                Sesuai Standar yang disepakati, bahwa ide merupakan pembuatan, pengembangan produk ataupun jasa bersifat
+                unik dan inovasi menjadi prioritas
+                Dalam
+                kegiatan ini, oleh karena itu kami ingin mengetahui ide anda yang dituliskan dalam kotak sederhana
+                dibawah ini. <br><br>
+                <div class="alert alert-success" role="alert">
+                    Jika Ide anda menarik, kami akan mengundang anda untuk ikut serta dalam kegiatan PKM-K 2022
+                </div>
+                </p>
+                <div ng-app="">
+                    <div>
+                        <div class="form-floating mb-2">
+                            <input type="text" class="form-control" id="nama" placeholder="fatur" ng-model="name">
+                            <label for="nama">Nama Anda</label>
+                        </div>
+
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="saya punya ide..." id="comment"
+                                style="height: 150px" ng-model="comment"></textarea>
+                            <label for="comment">Tuliskan Ide Anda</label>
+                        </div>
+                    </div>
+                    <div>
+                        <a id="btnSubmit"
+                            href="https://api.whatsapp.com/send?phone=6285298197900/&text=nama%20saya:%20{{name}}%20saya%20memiliki%20ide%20{{comment}}"
+                            ; class="btn btn-success mt-2" cols="10">Kirim</a>
+                    </div>
+                </div>
+        </div>
+        <script src="../style/js/bootstrap.js"></script>
+        <script src="../constroller.js"></script>
+</body>
+
+</html>
