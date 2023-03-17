@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/css/bootstrap.css" rel="stylesheet">
+    <script src="../angular.min.js"></script>
+    <link rel="stylesheet" href="../style/font.css">
+    <title>Program PKM-K Prodi Informatika Universitas Nasional</title>
+</head>
+
+<body>
+    <div class="header bg-warning">
+        <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/myphotocircle.png" alt="" width="30" height="30">
+                </a> -->
+                <div class="title">
+                    <h4>PKM-K 2022</h4>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-2 blog-content shadow-sm p-lg-3">
+        <h3 class="mt-2">Program PKM-K Prodi Informatika Universitas Nasional</h3>
+        <span><small>author: islaturrahman</small></span>
+        <div class="content mt-3 mb-3">
+            <a>
+                Hy Selamat Datang di Perencanaan Pembentukan Tim dalam Program PKM-K 2022!! <br>
+                anda dapat membaca informasi lebih detail terkait program ini
+                <a href="https://simbelmawa.kemdikbud.go.id/portal/wp-content/uploads/2022/03/4.-PKM-K.pdf"
+                    class="btn btn-outline-success border-0" target="_blank">
+                    disini
+                </a>
+                <br><br>
+                Berdasarkan Program tersebut, kami mengundang anda untuk mengikuti Program Mahasiswa Kreatif PKM-K 2022
+                ini dengan
+                ide anda yang kreatif dan unik, aktivitas dalam program ini adalah kolaborasi dalam membangun
+                produk digital maupun non digital. <br> jika anda adalah mahasiswa yang kami cari, ini adalah kesempatan
+                anda
+                untuk bergabung dalam tim yang produktif. ide yang ditawarkan merupakan pembuatan
+                ataupun pengembangan produk dan jasa bersifat
+                unik dimana produk/jasa bernilai baru dan inovatif.
+                oleh karena itu kami ingin mengetahui ide anda yang dituliskan dalam form sederhana
+                dibawah ini. <br> <br><br>
+                <div class="alert alert-success" role="alert">
+                    Jika Ide anda menarik, kami akan mengundang anda untuk ikut serta dalam Tim kegiatan PKM-K 2022
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+                </div>
+                </p>
+                <div ng-app="" class="card p-2">
+                    <div class="mb-2">
+                        <div class="form-floating mb-2">
+                            <input type="text" class="form-control" id="nama" placeholder="fatur" ng-model="name"
+                                required>
+                            <label for="nama">Nama Anda</label>
+                        </div>
+
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="saya punya ide..." id="comment"
+                                style="height: 150px" ng-model="comment" required></textarea>
+                            <label for="comment">Tuliskan Ide Anda</label>
+                        </div>
+                    </div>
+                    <div class="saran">
+                        <p>
+                            <a class="btn btn-outline-success border-0" data-bs-toggle="collapse"
+                                href="#collapseExample" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Punya Saran Untuk Halaman Ini?
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="saya punya ide..." id="comment"
+                                    style="height: 70px" ng-model="saran"></textarea>
+                                <label for="comment">Saran Saya</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a id="btnSubmit"
+                            href="https://api.whatsapp.com/send?phone=6285298197900/&text=nama%20saya:%20{{name}}%0A----------%0AIde:{{comment}}%0A---------%0Asaran:{{saran}}"
+                            ; class="btn btn-success mt-2 w-100" cols="10">Kirim</a>
+                    </div>
+                </div>
+        </div>
+        <script src="../style/js/bootstrap.js"></script>
+        <script src="../constroller.js"></script>
+</body>
+
+</html>

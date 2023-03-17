@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Struktur</title>
+</head>
+
+<body class="bg-light">
+    <div class="cantainer">
+        <div class="content">
+            <div class="row">
+                <div class="col-sm-4 justify-content-center"></div>
+                <div class="col-sm-4 justify-content-center p-4">
+                    <div class="text-center">
+                        <h3>Program Stack</h3>
+                    </div>
+                    <input type="text" id="inputStack" class="form-control" aria-describedby="passwordHelpBlock"
+                        placeholder="Input...">
+                    <button class="btn btn-outline-primary mt-2" id="click">Tambah</button>
+                    <button class="btn btn-outline-success mt-2" id="pop">Keluarkan Tumpukan</button>
+                </div>
+                <div class="col-sm-4 justify-content-center"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 justify-content-center"></div>
+                <div class="col-sm-4 justify-content-center p-4">
+                    <div id="alert-overflow" class="w-100">
+                        <ol class="list-group list-group-numbered" id="tampil">
+
+                        </ol>
+                        <div class="alert alert-info" role="alert">
+                            Stack Kosong, Input Stak!!</div>
+                        <div class="alert alert-danger mt-2" role="alert" style="display: none;">
+                            Stak Penuh, Keluarkan Stak!!</div>
+                    </div>
+                </div>
+                <div class="col-sm-4 justify-content-center"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { Stack } from '../data-sctructure/stuck.js';
+
+        const stack = new Stack();
+
+        const btn = document.getElementById('click');
+        const btnView = document.getElementById('view');
+        const btnPop = document.getElementById('pop');
+        const input = document.getElementById("inputStack");
+
+        btn.addEventListener('click', function () {
+            if (input.value == "") {
+                alert('isi form dengan angka!')
+                input.focus();
+            } else {
+                stack.push(input.value);
+                stack.view();
+                input.value = "";
+                input.focus();
+            }
+        })
+
+        btnPop.addEventListener('click', function () {
+            confirm(stack.pop() + ' dikeluarkan dari stack')
+            stack.view();
+        })
+
+
+    </script>
+    <!-- squeri -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
