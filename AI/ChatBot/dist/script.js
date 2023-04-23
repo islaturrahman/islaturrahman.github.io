@@ -35,7 +35,7 @@ function setDataAPI(keyword) {
 
   $('.list-data').append(`<div class="chat__conversation-board__message-container reversed">
     <div class="chat__conversation-board__message__person">
-      <div class="chat__conversation-board__message__person__avatar"><img src="https://islaturrahman.github.io/assets/img/myphotocircle.png" alt="Dennis Mikle"/></div><span class="chat__conversation-board__message__person__nickname">Dennis Mikle</span>
+      <div class="chat__conversation-board__message__person__avatar"><img src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png" alt="Dennis Mikle"/></div><span class="chat__conversation-board__message__person__nickname">Dennis Mikle</span>
     </div>
     <div class="chat__conversation-board__message__context">
       <div class="chat__conversation-board__message__bubble"> <span>`+ keyword + `</span></div>
@@ -56,14 +56,16 @@ function setDataAPI(keyword) {
     success: function (result) {
       $('.list-data').append(`<div class="chat__conversation-board__message-container">
             <div class="chat__conversation-board__message__person">
-              <div class="chat__conversation-board__message__person__avatar"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Monika Figi"/></div><span class="chat__conversation-board__message__person__nickname">Monika Figi</span>
+              <div class="chat__conversation-board__message__person__avatar"><img src="https://islaturrahman.github.io/assets/img/myphotocircle.png" alt="Monika Figi"/></div><span class="chat__conversation-board__message__person__nickname">Monika Figi</span>
             </div>
             <div class="chat__conversation-board__message__context">
               <div class="chat__conversation-board__message__bubble"> <span>`+ result.cnt + `</span></div>
             </div>
           </div>`)
-
     }
   });
+
+  Notification.requestPermission()
+
 }
 
